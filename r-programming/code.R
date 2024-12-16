@@ -12,7 +12,9 @@ play_game <- function() {
     user_hand <- readline("Choose your hands: ")
     if(com_hand == user_hand) {
       # Draw
+      print(paste("com_hand: ",comhand))
       print("Draw")
+      games <- games + 1
     } else if(com_hand == "hammer") {
       if(user_hand == "scissor") {
         # com hammer VS user scissor <- com win
